@@ -1,0 +1,126 @@
+
+@font-face {
+    font-family: "Cursed Timer ULiL Font";
+    src: url("CursedTimerUlil-Aznm.ttf");
+}
+body {
+    margin: 0;
+    text-align: centre;
+    color: white;
+    
+}
+.footer{
+    /* background: red; */
+    text-align: center;
+
+}
+.container{
+ 
+      max-width: 60em;
+    width: 70%;
+    margin: 3em  auto;
+    height: 40em;
+    background: #1B244A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.section {
+    max-width: 60em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3em;
+    width: 80%;
+    
+    /* margin-bottom: 3em 0 auto auto; */
+    /* height: 20em; */
+    /* background: white; */
+}
+.section h3{
+    font-size: 2em;
+    margin: 0
+}
+.home,.gust{
+    height: 15em;
+    width: 15em;
+    text-align: center;
+
+   
+}
+.home-score,.gust-score{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: 8em;
+     background: #080001;
+     border-radius: 12px;
+
+}
+.hscore ,.gscore{
+    font-family: "Cursed Timer ULiL Font",  sans-serif;
+  font-size: 6rem;  
+color: orange
+  
+}
+.winner{
+    color: greenyellow;
+}
+/********BTNS**********/
+.btns{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+font-family: "Cursed Timer ULiL Font",  sans-serif;
+
+}
+ .btns button{
+    background: none;
+    color: #9AABD8;
+    border: 2px solid ;
+    border-radius: 3px;
+    width: 3em;
+    height: 2.5em;
+}
+
+
+
+@media(max-width:800px){
+    .container{
+        height: 55em;
+
+    }
+    .gust{
+        margin-top: 2em;
+    }
+}
+
+/***********Footer************/
+.footer button{
+   background: none;
+    color: #9AABD8;
+    border: 2px solid ;
+    border-radius: 3px;
+    width: 4.5em;
+    height: 2.5em; 
+     margin-left: 1em;
+}
+#time{
+   font-family: "Cursed Timer ULiL Font",  sans-serif;
+ font-size: 3em; 
+}
+/*  */
+
+.one:disabled,.two:disabled,.three:disabled,.four:disabled{
+   opacity: 50%;
+   cursor: no-drop;
+}
+/*********Green********/
+.green{
+    color: greenyellow;
+}
