@@ -71,7 +71,7 @@ document.getElementById('time').innerText=0
         count=1
         document.getElementById('start').innerHTML='End'
           /**********INABLING THE BUTTONS************************/   
-          for(let i=1;i<=7;i++){
+          for(let i = 1; i < = 7; i++){
                document.getElementById(`${i}`) .disabled=false
           }
        
@@ -82,7 +82,7 @@ document.getElementById('time').innerText=0
          document.getElementById('start').innerHTML='Start'
          timee(isStart=false)
          
-        for(let i=1;i<=7;i++){
+        for(let i = 1 ; i < = 7 ; i++){
                document.getElementById(`${i}`) .disabled=true
           }
        
@@ -97,7 +97,7 @@ function timee(start){
  
         
 if(start == true){
-        time = setInterval(()=>{
+        time = setInterval( () => {
         if(document.getElementById('time').innerText === 0){
             
            return 0
@@ -117,14 +117,14 @@ let ispaused=false
 function pause(){
     
     ispaused = !ispaused
-    console.log(ispaused)
+   
      if(document.getElementById('start').innerHTML =='Start')
     {
        
      count=0
     }
     if(ispaused){ 
-        for(let i=1;i<7;i++){
+        for(let i=1 ; i < 7 ; i++){
                document.getElementById(`${i}`) .disabled=true
           
           }
@@ -135,9 +135,12 @@ function pause(){
                }
                document.getElementById('7').innerText='Pause'
                }
-    console.log(59-count)
+
+    
     document.getElementById('time').innerText=count
+
     isStart =  !isStart
+
     timee(isStart)
 }
 /**************************** */
