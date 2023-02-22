@@ -140,4 +140,4 @@ function pause(){
     isStart =  !isStart
     timee(isStart)
 }
-/**************************** */
+/***************Final************* */
